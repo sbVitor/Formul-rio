@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+    <form>
+        <div class="formulario">
+        <label for="nome">Nome:</label> 
+        <input type="text" id="nome" class="input-padrao" required placeholder="Cookie"> 
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" class="input-padrao" required placeholder="Pisca">
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)XXXXX-XXXX">
+        
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="58" rows="5" id="mensagem"></textarea>
+
+        <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email"><input type="radio" name="contato" 
+                value="email" id="radio-telefone"> E-mail</label>
+
+            <label for="radio-telefone"><input type="radio" name="contato"
+            value="telefone" id="radio-telefone">Telefone</label>
+
+            <label for="radio-whatsapp"><input type="radio" name="contato"
+           value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox"
+            checked>Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value="Enviar Formulário" class="enviar">
+</div>
+    </form>
+</main>
+<footer>
+    <p class="copyright">&copy; Copyright Formulário - 2024 </p>
+</footer>
+</body>
+</html>
